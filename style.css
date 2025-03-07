@@ -1,0 +1,32 @@
+div {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  background-color: blue;
+  height: 600px;
+}
+
+footer p {
+  width: 200px;
+  background-color: #158000;
+  color: white;
+}
+
+.estatueta-justica {
+  width: 40px;
+}
+
+.card p {
+  width: 500px;
+  border: 3px solid gold;
+  background-color: gray;
+  border-radius: 40px;
+  font-weight: 200;
+}
+
+.card h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
