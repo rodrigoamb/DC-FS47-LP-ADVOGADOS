@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DC Advogados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <div>
+    <header class="container-header-cabecalho">
+      <div class="container-div-cabecalho">
         <img src="assets/logo.png" alt="logo dc advogados" />
-        <nav>
+        <nav class="nav-cabecalho">
+          <i id="menu" class="fa-solid fa-bars"></i>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="#banner">Inicio</a>
             </li>
             <li>
-              <a href="#">Especialidades</a>
+              <a href="#especialidades">Especialidades</a>
             </li>
             <li>
-              <a href="#">Quem Somos</a>
+              <a href="#quem-somos">Quem Somos</a>
             </li>
             <li>
-              <a href="#">Depoimentos</a>
+              <a href="#depoimentos">Depoimentos</a>
             </li>
             <li>
               <a href="./pages/contato.html">Contato</a>
@@ -33,26 +47,31 @@
       </div>
     </header>
     <!-- banner principal -->
-    <section>
-      <div>
-        <div>
+    <section id="banner" class="container-section-banner">
+      <div class="container-div-banner">
+        <div class="container-div-texto-banner">
           <h1>Defendendo seus direitos com excelência e dedicação.</h1>
           <p>
-            Defendendo seus direitos com excelência e dedicação. Oferecemos
-            serviços jurídicos personalizados e eficientes para garantir que
-            você tenha o suporte necessário em qualquer situação legal.
+            Oferecemos serviços jurídicos personalizados e eficientes para
+            garantir que você tenha o suporte necessário em qualquer situação
+            legal.
           </p>
-          <a href="#">Quero saber mais</a>
+          <a class="botao-quero-saber-mais" href="#">Quero saber mais</a>
         </div>
-        <img src="assets/justica.png" alt="Justiça" class="estatueta-justica" />
+        <img
+          id="estatua-justica"
+          src="assets/justica.png"
+          alt="Justiça"
+          class="estatueta-justica"
+        />
       </div>
     </section>
     <!-- Especialidades -->
-    <section>
-      <div>
+    <section id="especialidades" class="container-section-especialidades">
+      <div class="container-div-especialidades">
         <h2>Especialidades</h2>
-        <div>
-          <div class="card">
+        <div class="container-cards-especialidades">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Civil</h3>
             <p>
@@ -60,7 +79,7 @@
               direitos do consumidor e outras questões civis.
             </p>
           </div>
-          <div class="card">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Trabalhista</h3>
             <p>
@@ -68,7 +87,7 @@
               trabalhistas e acordos.
             </p>
           </div>
-          <div class="card">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Civil</h3>
             <p>
@@ -76,7 +95,7 @@
               direitos do consumidor e outras questões civis.
             </p>
           </div>
-          <div class="card">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Civil</h3>
             <p>
@@ -84,7 +103,7 @@
               direitos do consumidor e outras questões civis.
             </p>
           </div>
-          <div class="card">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Civil</h3>
             <p>
@@ -92,7 +111,7 @@
               direitos do consumidor e outras questões civis.
             </p>
           </div>
-          <div class="card">
+          <div class="card-especialidades">
             <img src="assets/balanca.png" alt="balança" />
             <h3>Direito Civil</h3>
             <p>
@@ -105,12 +124,11 @@
     </section>
 
     <!-- Quem somos -->
-
-    <section>
-      <div>
-        <img src="/assets/advogado.png" alt="foto advogado" />
+    <section id="quem-somos" class="container-section-quem-somos">
+      <div class="container-div-quem-somos">
+        <img id="advogado" src="/assets/advogado.png" alt="foto advogado" />
         <h2>Quem Somos</h2>
-        <div>
+        <div class="container-div-paragrafos">
           <p>
             O escritório DC Advogados Associados foi fundado por Dr. Carlos
             Duarte, um advogado visionário com mais de 20 anos de experiência
@@ -146,31 +164,31 @@
             necessário em momentos decisivos. Seja qual for o desafio, estamos
             prontos para enfrentá-lo ao seu lado.
           </p>
-          <p>“Sua confiança é a nossa maior vitória.”</p>
+          <p id="ultimo-paragrafo">“Sua confiança é a nossa maior vitória.”</p>
         </div>
-        <a href="#">Quero saber mais</a>
+        <a href="#" class="botao-quero-saber-mais">Quero saber mais</a>
       </div>
     </section>
 
     <!-- números -->
-    <section>
-      <div>
-        <div>
+    <section class="container-section-numeros">
+      <div class="container-div-numeros">
+        <div class="card-numeros">
           <h3>+215</h3>
           <p>Mais de 215 clientes atendidos</p>
         </div>
 
-        <div>
+        <div class="card-numeros">
           <h3>+250</h3>
           <p>Mais de 250 casos resolvidos</p>
         </div>
 
-        <div>
+        <div class="card-numeros">
           <h3>+20</h3>
           <p>Mais de 20 anos de experiência no Direito</p>
         </div>
 
-        <div>
+        <div class="card-numeros">
           <h3>+10</h3>
           <p>Equipe com mais de 10 especialistas do Direito</p>
         </div>
@@ -178,12 +196,12 @@
     </section>
 
     <!-- depoimentos -->
-    <section>
-      <div>
+    <section id="depoimentos" class="container-section-depoimentos">
+      <div class="container-div-depoimentos">
         <h2>Depoimentos</h2>
-        <div>
-          <div>
-            <img src="./assets/aspas.png" alt="aspas" />
+        <div class="container-cards-depoimentos">
+          <div class="card-depoimentos">
+            <img class="aspas" src="./assets/aspas.png" alt="aspas" />
             <img src="./assets/usuario.png" alt="usuario" />
             <img src="./assets/estrelas.png" alt="estrelas" />
             <h3>João Silva</h3>
@@ -193,8 +211,8 @@
             </p>
           </div>
 
-          <div>
-            <img src="./assets/aspas.png" alt="aspas" />
+          <div class="card-depoimentos">
+            <img class="aspas" src="./assets/aspas.png" alt="aspas" />
             <img src="./assets/usuario.png" alt="usuario" />
             <img src="./assets/estrelas.png" alt="estrelas" />
             <h3>Maria Oliveira</h3>
@@ -203,8 +221,8 @@
             </p>
           </div>
 
-          <div>
-            <img src="./assets/aspas.png" alt="aspas" />
+          <div class="card-depoimentos">
+            <img class="aspas" src="./assets/aspas.png" alt="aspas" />
             <img src="./assets/usuario.png" alt="usuario" />
             <img src="./assets/estrelas.png" alt="estrelas" />
             <h3>Ana Santos</h3>
@@ -216,8 +234,8 @@
 
     <!-- Compromisso -->
 
-    <section>
-      <div>
+    <section class="container-section-compromisso">
+      <div class="container-div-compromisso">
         <h2>Compromisso com a Justiça e com Você</h2>
         <p>
           Nosso escritório acredita que cada cliente merece uma abordagem
@@ -226,14 +244,12 @@
           sua necessidade. Seja qual for o desafio, você pode contar com uma
           equipe preparada para fazer a diferença.
         </p>
-        <a href="#">Fale conosco</a>
+        <a class="botao-quero-saber-mais" href="#">Fale conosco</a>
       </div>
     </section>
 
     <!-- Rodapé -->
 
-    <footer>
-      <p>Desenvolvido por Dev. Rodrigo Medeiros - 2025 &copy;</p>
-    </footer>
+    <footer>Desenvolvido por Dev. Rodrigo Medeiros - 2025 &copy;</footer>
   </body>
 </html>
